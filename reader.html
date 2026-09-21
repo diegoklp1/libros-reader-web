@@ -1,7 +1,14 @@
-<!DOCTYPE html><html  lang="es"><head><title data-rh="true"></title><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="theme-color" content="#7A5C3E"/><meta name="description" content="Tu biblioteca, lectura y audiolibros sincronizados entre PC y celular."/><link rel="manifest" href="/libros-reader-web/manifest.webmanifest"/><link rel="apple-touch-icon" href="/libros-reader-web/icon-192.png"/><style id="expo-reset">#root,body,html{height:100%}body{overflow:hidden}#root{display:flex}</style><style>
+<!DOCTYPE html><html  lang="es"><head><title data-rh="true"></title><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="theme-color" content="#7A5C3E"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-title" content="LectorLibros"/><meta name="description" content="Tu biblioteca, lectura y audiolibros sincronizados entre PC y celular."/><link rel="manifest" href="/libros-reader-web/manifest.webmanifest"/><link rel="apple-touch-icon" href="/libros-reader-web/icon-192.png"/><style id="expo-reset">#root,body,html{height:100%}body{overflow:hidden}#root{display:flex}</style><style>
 body { background-color: #F5F1E8; }
 @media (prefers-color-scheme: dark) { body { background-color: #171512; } }
-</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+</style><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/libros-reader-web/sw.js', { scope: '/libros-reader-web/' })
+      .catch(function (error) { console.error('No se pudo habilitar el modo offline', error); });
+  });
+}
+</script><style id="react-native-stylesheet">[stylesheet-group="0"]{}
 body{margin:0;}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
@@ -322,5 +329,5 @@ input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-web
 @keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
 @keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
 @keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
-@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="icon" href="/libros-reader-web/favicon.ico" /></head><body><div id="root"><div class="css-g5y9jx r-13awgt0"><!--$--><div class="css-g5y9jx" style="flex:1"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx" style="flex:1;align-items:center;justify-content:center;background-color:rgba(241,239,230,1.00)"><div role="progressbar" aria-valuemax="1" aria-valuemin="0" class="css-g5y9jx r-1awozwy r-1777fci"><div class="css-g5y9jx r-z80fyv r-19wmn03 r-17bb2tj r-1muvv40 r-1yef0xd r-1ldzwu0"><svg height="100%" viewBox="0 0 32 32" width="100%"><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#1F5C4A;opacity:0.2"></circle><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#1F5C4A;stroke-dasharray:80;stroke-dashoffset:60"></circle></svg></div></div></div></div></div><!--/$--></div></div><script src="/libros-reader-web/_expo/static/js/web/entry-9b6346dce8a7274a8adc0853cf948a5b.js" defer></script>
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="icon" href="/libros-reader-web/favicon.ico" /></head><body><div id="root"><div class="css-g5y9jx r-13awgt0"><!--$--><div class="css-g5y9jx" style="flex:1"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx" style="flex:1;align-items:center;justify-content:center;background-color:rgba(241,239,230,1.00)"><div role="progressbar" aria-valuemax="1" aria-valuemin="0" class="css-g5y9jx r-1awozwy r-1777fci"><div class="css-g5y9jx r-z80fyv r-19wmn03 r-17bb2tj r-1muvv40 r-1yef0xd r-1ldzwu0"><svg height="100%" viewBox="0 0 32 32" width="100%"><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#1F5C4A;opacity:0.2"></circle><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#1F5C4A;stroke-dasharray:80;stroke-dashoffset:60"></circle></svg></div></div></div></div></div><!--/$--></div></div><script src="/libros-reader-web/_expo/static/js/web/entry-4b79474557daf0343e10611000bfeb48.js" defer></script>
 </body></html>
